@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: linear-gradient(to right, rgb(219, 107, 183), purple);
+    color: white;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+    height: 150px;
+}
+
+h2 {
+    margin-right: 18px;
+    font-size: 40px;
+}
+
+#checkI {
+    margin-right: 15px;
+    margin-left: 0px;
+}
+.new{
+    background-color: transparent;
+}
+.user_input {
+    width: 350px;
+    text-align: center;
+}
+
+.user_input input {
+    width: 80%;
+    outline: none;
+    padding: 5px;
+    border: 1px solid rgb(255, 0, 221);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.user_input input:focus {
+    box-shadow: 0 0 10px rgb(255, 0, 221);
+    border: 1px solid rgb(255, 0, 221);
+}
+
+.user_input button:hover {
+    box-shadow: 0 0 10px rgb(255, 0, 221);
+    border: 1px solid rgb(255, 0, 221);
+}
+
+.user_input button {
+    cursor: pointer;
+    padding: 5px;
+    width: 40px;
+    transition: 1s;
+    outline: none;
+    font-weight: bold;
+    color: rgb(214, 9, 214);
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.to_do_items {
+    width: 500px;
+    margin: auto;
+}
+
+.item {
+    background-color: #facbf0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.item:hover {
+    box-shadow: 0 0 20px purple;
+    border: 1px solid pink;
+}
+
+.item i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media(max-width:768px) {
+    .nav {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav h2 {
+        margin: 10px 0;
+    }
+
+    .user_input {
+        width: 100%;
+    }
+
+    .to_do_items {
+        width: 100%;
+    }
+}
+
+@media(max-width:480px) {
+    .user_input #input {
+        width: 74%;
+    }
+}
+
+@media(max-width:320px) {
+    .user_input #input {
+        width: 60%;
+    }
+}
